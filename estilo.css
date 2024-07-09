@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* Navigation */
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-flex-row li {
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-flex-row li a:hover {
+    color: #ffd700;
+}
+
+/* Intro Section */
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.link-to-book-wrapper {
+    margin-top: 20px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.about-section h3, .about-section p {
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/* Carousel */
+.carousel-inner {
+    height: 700px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Booking Section */
+.container {
+    margin-top: 50px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-column-form, .opening-time, .contact-address {
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.flex-column-form h3, .opening-time h3, .contact-address h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #c2a7a7;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border: 0;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+
+.opening-time p span, .contact-address p span {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 577px) and (max-width: 800px) {
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p, .about-section h3 {
+        font-size: 1.5em;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .about-section p, .about-section h3 {
+        font-size: 1.2em;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group p, .opening-time p span, .contact-address p span {
+        font-size: 1em;
+    }
+}
